@@ -27,7 +27,7 @@ public class FloaterRotater : MonoBehaviour {
 		float xRot = Input.GetAxis("Vertical") * YSensitivity;
 		float zRot = Input.GetAxis("Other") * ZSensitivity;
 
-		// What if I comment this ...
+		// What if I comment this ... (NOTE: You can also rewrite all three lines to be AngleAxis)
 		m_rot = Quaternion.identity;
 		m_rot *= Quaternion.Euler (xRot, 0f, 0f);
 		m_rot *= Quaternion.Euler (0f, yRot, 0f);
