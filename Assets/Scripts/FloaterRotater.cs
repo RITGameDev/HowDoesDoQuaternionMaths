@@ -31,7 +31,7 @@ public class FloaterRotater : MonoBehaviour {
 		m_rot = Quaternion.identity;
 		m_rot *= Quaternion.Euler (xRot, 0f, 0f);
 		m_rot *= Quaternion.Euler (0f, yRot, 0f);
-		m_rot *= Quaternion.Euler (0f, 0, zRot);
+		m_rot *= Quaternion.Euler (0f, 0f, zRot);
 
 		// ... and uncomment this?
 		//m_CameraTargetRot *= Quaternion.Euler (-xRot, yRot, 0f);
